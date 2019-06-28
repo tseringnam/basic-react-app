@@ -4,7 +4,7 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   tools {
-    nodejs 'node-latest'
+    nodejs 'nodejs'
   }
   parameters {
     string(name: 'IMAGE_REPO_NAME', defaultValue: 'tseringnam/basic-react', description: '')
